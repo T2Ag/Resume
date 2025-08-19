@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tito Agustin L. Obguia — IT Graduate (Resume)</title>
+  <meta name="description" content="Resume of Tito Agustin L. Obguia — IT Graduate with experience in networking, hardware, and full‑stack web development." />
+  <style>
+    :root {
+      --ink: #0f172a;         /* slate-900 */
+      --muted: #475569;       /* slate-600 */
+      --accent: #0ea5e9;      /* sky-500 */
+      --bg: #ffffff;
+      --line: #e2e8f0;        /* slate-200 */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .page { max-width: 960px; margin: 32px auto; padding: 0 24px; }
+    header { display: grid; grid-template-columns: 1fr; gap: 12px; border-bottom: 2px solid var(--line); padding-bottom: 16px; }
+    .name { font-size: 2rem; font-weight: 800; letter-spacing: 0.2px; }
+    .role { font-size: 1.05rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    .contact { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.98rem; }
+    .contact a, .contact span { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
+    .contact a:hover { color: var(--accent); }
+
+    main { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px; }
+
+    .section { border-top: 1px solid var(--line); padding-top: 18px; }
+    .section:first-of-type { border-top: 0; padding-top: 0; }
+    .section h2 { margin: 0 0 10px 0; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+
+    /* Grid for two-column details on wide screens */
+    @media (min-width: 860px) {
+      main { grid-template-columns: 2fr 1fr; gap: 32px; }
+      .leftcol .section, .rightcol .section { border-top: 0; padding-top: 0; }
+      .leftcol { display: grid; gap: 24px; }
+      .rightcol { display: grid; gap: 24px; }
+    }
+
+    /* Blocks */
+    .about { font-size: 1rem; line-height: 1.6; }
+
+    .edu-item, .exp-item, .proj-item { display: grid; grid-template-columns: 1fr auto; gap: 6px 14px; padding: 12px 0; border-bottom: 1px dashed var(--line); }
+    .edu-item:last-child, .exp-item:last-child, .proj-item:last-child { border-bottom: 0; }
+
+    .item-title { font-weight: 700; }
+    .item-sub { color: var(--muted); }
+    .item-meta { text-align: right; color: var(--muted); white-space: nowrap; }
+
+    ul.clean { margin: 8px 0 0 18px; padding: 0; }
+    ul.clean li { margin: 4px 0; }
+
+    .pillset { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill { border: 1px solid var(--line); padding: 6px 10px; border-radius: 999px; font-size: 0.92rem; background: #f8fafc; }
+
+    footer { margin-top: 20px; font-size: 0.9rem; color: var(--muted); text-align: center; }
+
+    /* Print styles (A4) */
+    @page { size: A4; margin: 16mm; }
+    @media print {
+      .page { max-width: none; margin: 0; padding: 0; }
+      header { border-bottom: 1px solid var(--line); }
+      a { color: inherit; text-decoration: none; }
+      .pill { border-color: #cbd5e1; background: #ffffff; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page" role="document">
+    <header>
+      <div class="name" aria-label="name">Tito Agustin L. Obguia</div>
+      <div class="role">IT Graduate</div>
+      <div class="contact" aria-label="contact">
+        <span>📞 <a href="tel:+639084413159">+63 908 4413 159</a></span>
+        <span>✉️ <a href="mailto:titoobguia3@gmail.com">titoobguia3@gmail.com</a></span>
+        <span>🌐 <a href="https://tito-portfolio-3d.pages.dev" target="_blank" rel="noopener">tito-portfolio-3d.pages.dev</a></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left column: About, Experience, Projects, Education -->
+      <section class="leftcol">
+        <div class="section">
+          <h2>About Me</h2>
+          <p class="about">
+            Creative and technically skilled IT graduate with hands-on experience in network configuration, server setup, and hardware troubleshooting.
+            Strong background in Cisco‑based networking, cabling (RJ45, fiber), and system maintenance, supported by solid knowledge in full‑stack web development.
+            A quick learner and solution‑oriented individual eager to grow in the field of network and IT support.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Experience</h2>
+
+          <div class="exp-item">
+            <div>
+              <div class="item-title">IT Intern — BOHECO 1</div>
+              <div class="item-sub">Hardware troubleshooting, system setup, and basic network support</div>
+              <ul class="clean">
+                <li>Assisted in hardware troubleshooting and system setup.</li>
+                <li>Provided basic network support and device maintenance.</li>
+                <li>Documented technical processes and asset inventory.</li>
+              </ul>
+            </div>
+            <div class="item-meta">2025</div>
+          </div>
+
+          <div class="exp-item">
+            <div>
+              <div class="item-title">Software Development Experience (Academic Timeline) — Mater Dei College</div>
+              <ul class="clean">
+                <li><strong>1st Year:</strong> Foundational web development using HTML, CSS, and JavaScript.</li>
+                <li><strong>2nd Year:</strong> Object‑Oriented Programming in Java for desktop‑based logic and simulations.</li>
+                <li><strong>3rd Year:</strong> Full‑stack projects using Laravel, Vue.js, Inertia.js, and Flutter.</li>
+                <li><strong>4th Year:</strong> Capstone project, AWS basics, and advanced web deployment.</li>
+              </ul>
+            </div>
+            <div class="item-meta">2021–2025</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Projects</h2>
+          <div class="proj-item">
+            <div>
+              <div class="item-title">Solo Developer — Gym Management System (FITSPIRE Gym)</div>
+              <div class="item-sub">Laravel, Vue 3, Inertia.js, Tailwind CSS, MySQL</div>
+              <ul class="clean">
+                <li>QR code‑based member check‑in.</li>
+                <li>Admin dashboard with user management.</li>
+                <li>Member registration, payments, and role‑based access.</li>
+                <li>Handled the full lifecycle: planning, development, deployment.</li>
+              </ul>
+              <div class="item-sub">Live: <a href="https://fitspire-flex.com" target="_blank" rel="noopener">fitspire-flex.com</a></div>
+            </div>
+            <div class="item-meta">2024</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <div class="edu-item">
+            <div>
+              <div class="item-title">Bachelor of Science in Information Technology</div>
+              <div class="item-sub">Mater Dei College — Graduated with <em>Cum Laude</em>; strong academic performance in IT systems and digital tools</div>
+            </div>
+            <div class="item-meta">2021–2025</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right column: Skills -->
+      <aside class="rightcol">
+        <div class="section">
+          <h2>Skills</h2>
+          <h3 class="item-title" style="margin:8px 0 6px">Languages &amp; Frameworks</h3>
+          <div class="pillset" aria-label="languages">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">PHP</span>
+            <span class="pill">Java</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Laravel</span>
+            <span class="pill">Vue.js</span>
+            <span class="pill">Inertia.js</span>
+            <span class="pill">React.js</span>
+            <span class="pill">Tailwind CSS</span>
+            <span class="pill">Flutter (Basic)</span>
+            <span class="pill">Godot (Basic)</span>
+          </div>
+
+          <h3 class="item-title" style="margin:16px 0 6px">Tools &amp; Technologies</h3>
+          <div class="pillset" aria-label="tools">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">XAMPP</span>
+            <span class="pill">Postman</span>
+            <span class="pill">AWS (EC2, Hosting — Basics)</span>
+            <span class="pill">Microsoft Office</span>
+            <span class="pill">Google Workspace</span>
+          </div>
+
+          <h3 class="item-title" style="margin:16px 0 6px">Soft Skills</h3>
+          <div class="pillset" aria-label="soft-skills">
+            <span class="pill">Adaptable</span>
+            <span class="pill">Fast Learner</span>
+            <span class="pill">Detail‑Oriented</span>
+            <span class="pill">Problem‑Solving</span>
+            <span class="pill">Documentation</span>
+            <span class="pill">Communication</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <span>Portfolio: </span><a href="https://tito-portfolio-3d.pages.dev" target="_blank" rel="noopener">tito-portfolio-3d.pages.dev</a>
+    </footer>
+  </div>
+</body>
+</html>
